@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Пример использования CryptoPro</title>
+
+        <!--pechat-->
+         <link type="text/css" href="css/ui-lightness/jquery-ui-1.8.6.custom.css" rel="stylesheet" />
+        <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.6.custom.min.js"></script>
+        <script type="text/javascript" src="js/jquery-watermarker-0.3.js"></script>
+        <style type="text/css"> div.watermark {border: 1px dashed #000;} img.watermark:hover { cursor: move; } </style>
+ <!-- /pechat-->
+
+    <!-- Полифиллы для работы библиотеки -->
+    <script src="js/polyfills/addEventListener.js"></script>
+    <script src="js/polyfills/promise.js"></script>
+    <script src="js/polyfills/forEach.js"></script>
+    <script src="js/polyfills/map.js"></script> 
+    <!-- Библиотека -->
+    <script src="js/crypto-pro.dist/crypto-pro.js"></script> 
+    <!-- Полифиллы для работы демо скриптов -->
+    <script src="js/polyfills/atob-btoa.js"></script>   
+    <script src="https://unpkg.com/vue@latest"></script>  
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+ 
+</head>
+<body> 
+ <style>#watermarked {border: dashed black 1px}</style>
+    <div id="vue"> <div is="app-main"></div> </div> 
+    <script src="./script.js"></script>  
+    <style>iframe {
+            height: 842pt;
+            width:  595pt;
+        }</style>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+
+
+</body>
+</html>

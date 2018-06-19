@@ -24,7 +24,7 @@ Vue.component("app-stamp-prev", {
 Vue.component("app-get-cert-list", {
     template: `
     <div>
-        <button v-if="!certList" @click="getCertList">Получить список сертификатов</button>
+        <button class="btn btn-danger" v-if="!certList" @click="getCertList">Получить список сертификатов</button>
 
         <div v-if="!certList==''"> 
             <h2>Выберите сертификат:</h2>  
@@ -38,10 +38,8 @@ Vue.component("app-get-cert-list", {
             issuerName:     {{selected_sert.issuerName}} <br>
             label:          {{selected_sert.label}}  <br>
             name:           {{selected_sert.name}}  <br>
-            subjectName:    {{selected_sert.subjectName}} <br>
-            thumbprint:     {{selected_sert.thumbprint}} <br>
-            validFrom:      {{selected_sert.validFrom}} <br>
-            validTo:        {{selected_sert.validTo}} <br>
+            subjectName:    {{selected_sert.subjectName}} <br> 
+            Действителен: с {{selected_sert.validFrom}} по {{selected_sert.validTo}} <br>
         </div>
 
     </div>`,
@@ -103,7 +101,7 @@ Vue.component("app-main", {
              :stamp_img="stamp_img"
         ></div>
         <hr> 
-        <p>msg: {{stat}}</p> 
+        <p>stat: {{stat}}</p> 
         <p>msg: {{msg}}</p>  
         <hr>
         <div v-if="iframe_show">

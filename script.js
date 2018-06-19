@@ -1,4 +1,7 @@
 
+///
+
+
 Vue.component("app-stamp-prev", {
     props: ["doc_prev","stamp_img","stampPrevShow"],
     template: `
